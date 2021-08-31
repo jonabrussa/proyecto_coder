@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+$colorX:white;
+$color0:black;
+$color1:darkviolet;
+$color2:darkblue;
+$color3:orange;
+$gradient:linear-gradient(to right,orange,blueviolet);
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+
+	background-image: url("img/nightparty.jpg");
+	background-repeat: no-repeat;
+	background-color:($color1);
+}
+ 
+h1 {
+	color:($color2);
+	font-size: 40px;
+	text-shadow:rgb(255, 166, 0) 2px 3px;
+	font-family: 'Zen Tokyo Zoo', cursive; /*agregamos la familia de zen tokio zoo*/
+animation-duration: 2s;
+animation-name:aparecer;
+}
+@keyframes aparecer {
+0% {
+	opacity: 0;
+}
+100% {
+	opacity: 1;
+}
+
+}
+h2 {
+	color:($color2);
+	font-size: 32px;
+	background:($color3);
+	width: 350px;
+	font-family:'Work Sans',sans-serif;
+}
+H3{
+	background:($color3);
+} 
+.footer{
+    line-height: 2cm;
+	margin:center;
+	font-size: 20px;
+	color:($colorX);
+	background:($gradient);
+	font-family: 'Work Sans',sans-serif; /*agregamos la familia de zen tokio zoo*/
+}
+.footer_link{
+	display: inline-flex;
+
+}
+
+
+
+
+/*................................. lista de todos los class del html .....................................*/
+
+.menu{
+	width: 100%;
+}
+
+.menu__Navegacion li{
+    font-size: 30px;
+   display: inline-table;
+   display: flex;
+   margin: 30px;
+   /*border-right: solid 3px darkblue;*/
+}
+
+.estiloFuente{ /* class para la fuente de la lista del menu */
+
+	font-style:bold;
+	font-family:'Work Sans',sans-serif;
+	text-shadow: red 2px 3px;
+
+}
+.nav-item{
+font-family: 'Merriweather', serif;
+font-style:oblique;
+
+}
+.dropdown-menu{
+background:($gradient);
+}
+
+li a{
+font-size: 20px;
+}
+li:hover a{
+font-size: 23px;
+transition:font-size 0.1s
+}
+.fondoHover{
+	background-color:($color1); /* fondo del hover de la lista */
+}
+.titulosCuadro{
+  background:($color1);
+}
+.texto__Modify--mod{                    /*modificacion del texto de la ventana eventos*/
+	text-align:center;
+line-height:1.6;
+}
+.formularioContacto{
+	margin-left: 500px;
+	font-style:oblique;
+	font-weight: bold;
+	animation-duration: 3s;
+animation-name:aparecer;
+}
+.formContact{
+	text-shadow: ($color0) 2px 2px;
+}
+.input{
+	display: grid;
+	grid-row-start: 1fr;
+	margin-top: 10px;
+  font-family:'Work Sans',sans-serif; 
+	text-shadow: ($color0) 2px 2px;
+}
+/*.footerBack{
+	background-color: blueviolet;
+	font-size: 30px;
+}*/
+
+.grid{
+	display: grid;
+grid-template-columns: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+/*background:linear-gradient(to right,orange,blueviolet);*/
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.textoInicio{
+	display: grid;
+	grid-area: 1fr;
+	margin-top: 20;
+	animation-duration: 3s;
+animation-name:aparecer;
+}
+.textoNosotros{
+	display: grid;
+	grid-area: 1fr;
+	margin-top: 20;
+	animation-duration: 3s;
+animation-name:aparecer;
+}
+.textoGaleria{
+	animation-duration: 3s;
+animation-name:aparecer;
+text-align: center;
+}
+@keyframes aparecer {
+0% {
+	opacity: 0;
+}
+100% {
+	opacity: 1;
+}
+}
+.textoAnimado{
+	animation-duration: 3s;
+animation-name:aparecer;
+}
+@keyframes aparecer {
+0% {
+	opacity: 0;
+}
+100% {
+	opacity: 1;
+}
+
+}
+
+
+
+#imagenes1{ 
+
+	display: flex;	
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-evenly;
+}
+#imagenes2{
+	display: flex;	
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#imagenes2 img{
+	padding:3px;
+}
+nav{
+	background:($gradient);
+}
+
+ul{   
+list-style: none;
+}
+
+ul ul{
+	position: absolute;
+	display: none;
+}
+ul ul li{
+	display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+ul li:hover ul{
+	display: block;
+}
+
+ul li a{
+
+	text-decoration:none;
+	color: orange;
+}
+
+tr td{
+	color: ($color1);
+	background: lightgray;
+}
+legend {
+    font:message-box;
+    color:yellow;
+}
+tr th{
+	color: ($color2);
+	background: lightgray;
+}
+label{
+	color: ($color0);
+	font-size:16px;
+}
+
+p {
+	background: ($color1);
+	border:solid 2px ($color3);
+	padding: 5px;
+	font-size: 22px;
+	color:($color3);
+	font-family:'Work Sans',sans-serif;/* familia de fuentes para el texto*/
+	letter-spacing:3px;
+  word-spacing:1px;
+}
+div label{
+	color:yellow;
+}
+fieldset{
+max-width:350px;
+}
+table{
+	margin-left: 450px;
+	animation-duration: 3s;
+animation-name:aparecer;
+}
+
+/* 
+Aca, le digo a css, que si mi pantalla es mas chica que 1025px que haga que .estiloFuente sea más pequeño
+que el original (podes hacer esto con media, o expresar los px en em desde el vamos, tambien le digo   
+que el margin sea menor) */
+
+@media screen and (max-width: 1025px) {
+	h1{
+		font-size: 40px;
+	}
+	
+	.estiloFuente{
+		font-size: 20px;
+	}
+
+	.listadoNavegacion li {
+		margin:15px;
+	}
+}
+
+/* y acá hago cambios con otra pantalla */
+
+@media screen and (max-width: 700px) {
+
+	h1{
+		font-size: 30px;
+	}
+
+	p{font-size: 15px;
+	}
+
+	.estiloFuente{
+		font-size: 15px;
+	}
+
+	.listadoNavegacion li {
+		margin:12px;
+	}
+	.formularioContacto{
+		margin-left: 200px;
+		font-style:normal;
+		font-weight: bold;
+		animation-duration: 3s;
+	animation-name:aparecer;
+	}
+}
+@media screen and (max-width: 320px) {
+	
+	h1{
+		font-size: 20px;
+	}
+
+	p{font-size: 8px;
+	}
+
+	.estiloFuente{
+		font-size: 7px;
+	}
+
+	.listadoNavegacion li {
+		margin:7px;
+	}
+	.formularioContacto{
+		margin-left: 0px;
+		font-style:normal;
+		font-weight: bold;
+		animation-duration: 3s;
+	animation-name:aparecer;
+	}
+}
